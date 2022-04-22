@@ -1,3 +1,4 @@
+import './style.css'
 import contact_load from "./contact_tab.js";
 import page_load from "./first_load.js";
 import menu_load from "./menu_tab.js";

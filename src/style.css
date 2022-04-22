@@ -12,11 +12,26 @@ body {
 }
 
 header {
-    padding: 1rem;
+    padding: 0.25rem;
     display: flex;
     justify-content: space-between;
     /* background-color: yellow; */
     font-size: 1.25rem;
+}
+
+.logo {
+    align-self: center;
+}
+
+.tab * {
+    width: 70%;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.tab *:hover{
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer ;
 }
 
 .tab {

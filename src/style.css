@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#content {
+    height: 100vh;
+    background-color: yellowgreen;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    font-size: 1.25rem;
+}
+
+.tab {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    background-color: yellow;
+    padding: 0.5rem;
+}
+
+.menu-item img {
+    object-fit: fill;
+}

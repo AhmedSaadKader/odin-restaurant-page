@@ -8,12 +8,17 @@ export default function page_load() {
     heading.innerText = 'Best Restaurant in the World'
     mainContent.appendChild(heading)
 
-    const restaurantImage = document.createElement('img')
-    restaurantImage.src = '../src/rest_table.jpeg'
-    mainContent.appendChild(restaurantImage)
+    // const restaurantImage = document.createElement('img')
+    // restaurantImage.src = '../src/chef.png'
+    // mainContent.appendChild(restaurantImage)
 
     const restaurantDescription = document.createElement('p')
-    restaurantDescription.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil rerum neque ab inventore minima.'
+    restaurantDescription.innerText = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Nihil rerum neque ab inventore minima.Lorem ipsum dolor sit amet, 
+    consectetur adipisicing elit. Nihil rerum neque ab invento
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Nihil rerum neque ab inventore minima.Lorem ipsum dolor sit amet, 
+    consectetur adipisicing elit. Nihil rerum neque ab invento`
     mainContent.appendChild(restaurantDescription)
 
     content.appendChild(mainContent)

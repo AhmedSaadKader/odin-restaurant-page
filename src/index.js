@@ -1,7 +1,6 @@
 import contact_load from "./contact_tab.js";
 import page_load from "./first_load.js";
 import menu_load from "./menu_tab.js";
-// import contact_load from "./contact_tab.js";
 
 
 const content = document.getElementById('content')
@@ -9,7 +8,7 @@ const header = document.createElement('header')
 
 const headerLogo = document.createElement('div')
 headerLogo.classList.add('logo')
-headerLogo.innerHTML = "Restaurant"
+headerLogo.innerHTML = "Restaurant Logo/Name"
 header.appendChild(headerLogo)
 
 const tabsDiv = document.createElement('div')
@@ -34,9 +33,7 @@ const removeContent = function () {
     const mainContent = document.getElementById('main-content')
     if (content.contains(mainContent)){
         content.removeChild(mainContent);
-        console.log(mainContent)
     }
-    console.log(content);
 }
 
 homeTabButton.addEventListener('click', () => {

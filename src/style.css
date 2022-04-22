@@ -5,14 +5,17 @@ body {
 
 #content {
     height: 100vh;
-    background-color: yellowgreen;
+    background-image: url(../src/main-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: yellowgreen; */
 }
 
 header {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    background-color: yellow;
+    /* background-color: yellow; */
     font-size: 1.25rem;
 }
 
@@ -23,10 +26,22 @@ header {
     justify-content: space-between;
 }
 
-.main-content-home {
+.main-content-home, .main-content-contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    margin-right: 15%;
+    margin-left: 50%;
+    background-color: rgb(251 235 137 / 70%);
+    padding: 0.4rem;
+    color: #50623b;
+}
+
+.main-content-contact > * {
+    font-size: 1.4rem;
+    display: inline-flex;
+    width: min(250px);
+    justify-content: space-between;
 }
 
 .main-content-menu {
@@ -37,11 +52,25 @@ header {
 }
 
 .menu-item {
-    display: flex;
-    background-color: yellow;
+    display: grid;
+    background-color: rgba(0,0,0,0.8);
     padding: 0.5rem;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
 
 .menu-item img {
     object-fit: fill;
+}
+
+.menu-item p{
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-item h1, h3{
+    color: antiquewhite;
+    padding: 1rem;
+    display: inline;
+    margin-block: 0;
 }

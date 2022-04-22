@@ -1,3 +1,5 @@
+import friedImage from './fried.jpeg'
+
 export default function menu_load() {
     const content = document.getElementById('content')
     const mainContent = document.createElement('div')
@@ -9,7 +11,7 @@ export default function menu_load() {
         const itemName = document.createElement('h1');
         itemName.innerText = 'Fried Meal';
         const itemImg = document.createElement('img');
-        itemImg.src = '../src/fried.jpeg'
+        itemImg.src = friedImage
         const itemDescription = document.createElement('p')
         itemDescription.innerText= 'lorem14 Lorem ipsum dolor sit amet, consectetur adipisicing elit.Nihil rerum neque ab inventore minima.Lorem ipsum dol amet,'
 
